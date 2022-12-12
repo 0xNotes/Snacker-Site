@@ -1,4 +1,6 @@
 import NFTSelect from '../components/NFTSelect';
+import grass from "../assets/grass.png";
+import sand from "../assets/sand.png";
 
 
 export default function Snacker() {
@@ -7,8 +9,8 @@ export default function Snacker() {
             {/* <div style={{marginTop: "2rem", marginBottom: "10rem"}}>SNACKER</div>
             <ConnectButton/>
             {isConnected?  <div className='NFTSelector'>ContainerTest</div> :<div></div> } */}
-            <NFTSelect/>
-            <NFTSelect/>
+            <NFTSelect backgroundTexture={grass}/>
+            <NFTSelect backgroundTexture={sand}/>
 
         </div>
 

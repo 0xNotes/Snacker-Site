@@ -12,8 +12,8 @@ export default function connectPage() {
             {/* <div style={{marginTop: "2rem", marginBottom: "10rem"}}>SNACKER</div>
             <ConnectButton/>
             {isConnected?  <div className='NFTSelector'>ContainerTest</div> :<div></div> } */}
-            <NFTSelect/>
-            <NFTSelect/>
+            {/* <NFTSelect/>
+            <NFTSelect/> */}
 
         </div>
     );
