@@ -64,8 +64,11 @@ body {
 
 .FeatureContainer {
   display: flex;
-  height: 65%;
+  flex-direction: column;
+  width: 26rem;
   margin-top: 2rem;
+  border: 6px solid black;
+  border-style: inset;
 }
 
 .FeatureTextContainer {
@@ -84,10 +87,15 @@ body {
 
 .FeaturedNFT {
   display: flex;
-  width: 30rem;
-  background-color: salmon;
-  border: 6px solid black;
-  border-style: inset;
+  max-width: 100%;
+}
+
+.ApproveButton {
+  height: 10%;
+  width: 100%;
+  font-size: x-large;
+  color: white;
+  background-color: red;
 }
 
 @-webkit-keyframes centerColor {

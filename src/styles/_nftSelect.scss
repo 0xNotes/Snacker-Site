@@ -22,8 +22,11 @@
 
 .FeatureContainer{
     display: flex;
-    height: 65%;
+    flex-direction: column;
+    width:  26rem;
     margin-top: 2rem;
+    border: 6px solid black;
+    border-style: inset;
     // flex-direction: column;
     //justify-content: center;
     //align-items: center;
@@ -47,14 +50,21 @@
 
 .FeaturedNFT{
     display: flex;
-    width: 30rem;
-    background-color: salmon;
-    border: 6px solid black;
-    border-style: inset;
-    //margin-top: rem;
 
+    //margin-top: rem;
+    max-width: 100%;
+}
+
+.ApproveButton{
+    //position: absolute;
+    height: 10%;
+    width: 100%;
+    font-size: x-large;
+    color: white;
+    background-color: red;
 
 }
+
 
 @keyframes centerColor {
     from {

@@ -42,10 +42,15 @@ export default function NFTSelect({
 
     return (
         <div className="NFTContainer" style={{ backgroundImage: `url(${backgroundTexture})`, objectFit: "fill" }}>
+
+
             <div className="FeatureContainer">
             <div className="FeatureTextContainer">{names[position] + " #" + id[position]}</div>
             <img className="FeaturedNFT" src={pics[position]}/>
+            <button className="ApproveButton">APPROVE</button>
             </div>
+
+
             <div className="NFTSelector">
                 <img src={arrowLeft} onClick={() => setPosition(numberFix(position-1))}></img>
                 <img className="NFTPreview" src={pics[numberFix(position-2)]}/>
