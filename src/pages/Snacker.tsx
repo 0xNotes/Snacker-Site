@@ -10,10 +10,11 @@ import water from "../assets/water.png";
 import droplet from "../assets/droplets.png";
 import cyber from "../assets/cyber.png";
 import cyber2 from "../assets/cyber2.png";
+import lightning from "../assets/lightning.png";
 
 export default function Snacker() {
 
-    const textures = [grass, sand, flames, flames2, water, droplet, cyber, cyber2];
+    const textures = [grass, sand, flames, flames2, water, droplet, cyber, cyber2, lightning];
 
     var randomNums = [1,2,3,4];
     var randomNums = generateRandomNumbers();

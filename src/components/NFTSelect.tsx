@@ -9,6 +9,7 @@ import Ghiblady from "../assets/ghiblady.jpg";
 import McLady from "../assets/mclady.jpg";
 import Bitch from "../assets/milady-that-bitch.jpg";
 import Remi from "../assets/rem_baby.jpg";
+import Question from "../assets/question.png";
 
 
 import { useState } from 'react';
@@ -27,9 +28,9 @@ export default function NFTSelect({
     bottomTexture,
     }: Props) {
     
-    const pics = [Miaura, RadBro, BoredMiladyMaker, Ghiblady, McLady, Bitch, Remi];
-    const names =["Miaura", "Radbro", "Bored Milady Maker", "Ghiblady", "McLady", "Milady, That B.I.T.C.H", "Remilio Babies"];
-    const id = [21, 1882, 152, 221, 1038, 50, 29];
+    const pics = [Question, Miaura, RadBro, BoredMiladyMaker, Ghiblady, McLady, Bitch, Remi];
+    const names =["???","Miaura", "Radbro", "Bored Milady Maker", "Ghiblady", "McLady", "Milady, That B.I.T.C.H", "Remilio Babies"];
+    const id = [0, 21, 1882, 152, 221, 1038, 50, 29];
 
     //Do a useeffect to handle a list fix if pics < 5 items 
     const [position, setPosition] = useState(0);
