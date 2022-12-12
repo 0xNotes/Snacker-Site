@@ -73,11 +73,46 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  background-size: contain;
 }
 
+@-webkit-keyframes centerColor {
+  from {
+    border: 4px solid yellow;
+  }
+  to {
+    border: 4px solid red;
+  }
+}
+
+@keyframes centerColor {
+  from {
+    border: 4px solid yellow;
+  }
+  to {
+    border: 4px solid red;
+  }
+}
 .NFTPreview {
   display: flex;
   height: 90%;
-  width: 18%;
+  width: 16%;
   background-color: black;
+  border: 4px solid yellow;
+  border-style: inset;
+}
+
+.NFTCenter {
+  display: flex;
+  height: 90%;
+  width: 16%;
+  background-color: black;
+  border: 4px solid yellow;
+  border-style: inset;
+  -webkit-animation-name: centerColor;
+          animation-name: centerColor;
+  -webkit-animation-duration: 40ms;
+          animation-duration: 40ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }/*# sourceMappingURL=styles.css.map */
