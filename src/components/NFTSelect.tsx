@@ -26,6 +26,8 @@ export default function NFTSelect({
     }: Props) {
     
     const pics = [Miaura, RadBro, BoredMiladyMaker, Ghiblady, McLady, Bitch, Remi];
+    const names =["Miaura", "Radbro", "Bored Milady Maker", "Ghiblady", "Milady, That B.I.T.C.H", "Remilio Babies"];
+    const id = [21, 1882, 152, 221, 1038, 50, 29];
 
     //Do a useeffect to handle a list fix if pics < 5 items 
     const [position, setPosition] = useState(0);
@@ -40,7 +42,10 @@ export default function NFTSelect({
 
     return (
         <div className="NFTContainer" style={{ backgroundImage: `url(${backgroundTexture})`, objectFit: "fill" }}>
+            <div className="FeatureContainer">
+            <div className="FeatureTextContainer">{names[position] + " #" + id[position]}</div>
             <img className="FeaturedNFT" src={pics[position]}/>
+            </div>
             <div className="NFTSelector">
                 <img src={arrowLeft} onClick={() => setPosition(numberFix(position-1))}></img>
                 <img className="NFTPreview" src={pics[numberFix(position-2)]}/>

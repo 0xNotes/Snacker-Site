@@ -20,18 +20,40 @@
     background-color: greenyellow;
 }
 
+.FeatureContainer{
+    display: flex;
+    height: 65%;
+    margin-top: 2rem;
+    // flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    border: 1px solid greenyellow;
+
+}
+
+.FeatureTextContainer{
+    font-size: x-large;
+    color: white;
+    position: absolute;
+    margin-top: 3rem;
+    // margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    z-index: 1;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 71%, rgba(0,212,255,0) 93%);
+}
+
 .FeaturedNFT{
+    display: flex;
+    width: 30rem;
+    background-color: salmon;
     border: 6px solid black;
     border-style: inset;
-    height: 65%;
-    width: 80%;
-    margin-top: 2rem;
-    background-color: salmon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-size: contain;
+    //margin-top: rem;
+
 
 }
 
