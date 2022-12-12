@@ -16,6 +16,7 @@ import { useState } from 'react';
 
 type Props = {
     backgroundTexture: any;
+    bottomTexture: any;
 
 };
 
@@ -23,10 +24,11 @@ type Props = {
 
 export default function NFTSelect({
     backgroundTexture,
+    bottomTexture,
     }: Props) {
     
     const pics = [Miaura, RadBro, BoredMiladyMaker, Ghiblady, McLady, Bitch, Remi];
-    const names =["Miaura", "Radbro", "Bored Milady Maker", "Ghiblady", "Milady, That B.I.T.C.H", "Remilio Babies"];
+    const names =["Miaura", "Radbro", "Bored Milady Maker", "Ghiblady", "McLady", "Milady, That B.I.T.C.H", "Remilio Babies"];
     const id = [21, 1882, 152, 221, 1038, 50, 29];
 
     //Do a useeffect to handle a list fix if pics < 5 items 
@@ -51,7 +53,7 @@ export default function NFTSelect({
             </div>
 
 
-            <div className="NFTSelector">
+            <div className="NFTSelector" style={{ backgroundImage: `url(${bottomTexture})`, objectFit: "fill" }}>
                 <img src={arrowLeft} onClick={() => setPosition(numberFix(position-1))}></img>
                 <img className="NFTPreview" src={pics[numberFix(position-2)]}/>
                 <img className="NFTPreview" src={pics[numberFix(position-1)]}/>
