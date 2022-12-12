@@ -1,0 +1,42 @@
+.NFTContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 43%;
+    border: 2px solid black;
+}
+
+.NFTSelector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    border: 4px solid black;
+    border-style: inset;
+    background-color: greenyellow;
+}
+
+.FeaturedNFT{
+    border: 6px solid black;
+    border-style: inset;
+    height: 65%;
+    width: 80%;
+    margin-top: 2rem;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.NFTPreview{
+    display: flex;
+    height: 90%;
+    width: 18%;
+    background-color: black;
+}
