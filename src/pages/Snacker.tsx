@@ -12,6 +12,7 @@ import cyber from "../assets/cyber.png";
 import cyber2 from "../assets/cyber2.png";
 import lightning from "../assets/lightning.png";
 
+
 export default function Snacker() {
 
     const textures = [grass, sand, flames, flames2, water, droplet, cyber, cyber2, lightning];
@@ -42,8 +43,7 @@ export default function Snacker() {
             {/* <div style={{marginTop: "2rem", marginBottom: "10rem"}}>SNACKER</div>
             <ConnectButton/>
             {isConnected?  <div className='NFTSelector'>ContainerTest</div> :<div></div> } */}
-            <NFTSelect backgroundTexture={textures[randomNums[0]]} bottomTexture={textures[randomNums[1]]}/>
-            <NFTSelect backgroundTexture={textures[randomNums[2]]} bottomTexture={textures[randomNums[3]]}/>
+            <NFTSelect backgroundTextureA={textures[randomNums[0]]} backgroundTextureB={textures[randomNums[1]]} bottomTexture={textures[randomNums[2]]}/>
 
         </div>
 

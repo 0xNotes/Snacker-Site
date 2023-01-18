@@ -1,0 +1,100 @@
+.NFTContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 93%;
+    width: 43%;
+    border: 4px solid black;
+    border-style: inset;
+
+}
+
+.NFTSelector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+}
+
+.FeatureContainer{
+    display: flex;
+    flex-direction: column;
+    max-width:  25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 6px solid black;
+    border-style: inset;
+    // flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+
+}
+
+.FeatureTextContainer{
+    font-size: x-large;
+    color: white;
+    position: absolute;
+    margin-top: 3rem;
+    // margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    z-index: 1;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 71%, rgba(0,212,255,0) 93%);
+}
+
+.FeaturedNFT{
+    display: flex;
+
+    //margin-top: rem;
+    max-width: 100%;
+}
+
+.ApproveButton{
+    //position: absolute;
+    height: 10%;
+    width: 100%;
+    font-size: x-large;
+    color: white;
+    background-color: red;
+}
+
+
+
+
+@keyframes centerColor {
+    from {
+        border: 4px solid yellow;
+    }
+    to {
+        border: 4px solid red;
+
+    }
+  }
+
+.NFTPreview{
+    display: flex;
+    height: 90%;
+    width: 10rem;
+    background-color: black;
+    border: 4px solid yellow;
+    border-style: inset;
+}
+
+.NFTCenter{
+    display: flex;
+    height: 90%;
+    width: 10rem;
+    background-color: black;
+    border: 4px solid yellow;
+    border-style: inset;
+    animation-name: centerColor;
+    animation-duration: 40ms;
+    animation-iteration-count: infinite;
+
+}
